@@ -59,7 +59,7 @@ searchBtn.addEventListener("click", (e) => {
 async function getSearchResult(input) {
   try {
     const response = await fetch(
-      `http://www.omdbapi.com/?s=${input}&apikey=68aad22e`
+      `https://www.omdbapi.com/?s=${input}&apikey=68aad22e`
     );
     const data = await response.json();
     const searchResult = data.Search;
@@ -211,7 +211,7 @@ function compareMovies() {
 // //Function to get new tab movie data
 async function getNewTabMovieData(input) {
   const response = await fetch(
-    `http://www.omdbapi.com/?i=${input}&apikey=68aad22e`
+    `https://www.omdbapi.com/?i=${input}&apikey=68aad22e`
   );
   const data = await response.json();
   // fecthing data for movie, open in new tab
