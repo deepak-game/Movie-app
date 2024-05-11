@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-6/css/all.min.css"
+      integrity="sha512-G2inZeefmR6vkbXThwxg1S4ypgbjtSU85+Nl1qHp/1FuyAqVL9Haw9iKsru2JKkPCx4CdFgbDd7V5jByMtmiJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="tabs-container">
+        <button class="homepage-btn active">Homepage</button>
+        <span class="app-name">IMBT App</span>
+        <button class="favorite-btn">Favorite Movies</button>
+      </div>
+      <section class="homepage-container">
+        <div class="movie-search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Enter title to search movie"
+          />
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="movie-container">
+          <!-- <div class="movie">
+         <div class='fa-bookmark'>*</div>
+        <p class="movie-title"></p>
+        <img src="" alt="movie-img" />
+        <p class="movie-year"></p>
+        <button class='fav-btn'>Add To Favorite</button>
+      </div> -->
+        </div>
+      </section>
+      <section class="favorite-container">
+        <!-- <div class="fav-movie">
+          <p class="fav-movie-title">${result.Title}</p>
+          <img src=${result.Poster} alt="movie-img" />
+          <p class="movie-rating">${result.imdbRating}/10</p>
+          <button class='remove-fav-btn'>Remove Favorite</button>
+          </div> -->
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

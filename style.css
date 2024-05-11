@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #bf00ff;
+  overflow-x: hidden;
+}
+
+.app-name {
+  font-size: 20px;
+  color: yellow;
+  margin-left: 10px;
+}
+
+/* Favorite-movie page styles */
+.favorite-container {
+  padding: 20px;
+  display: none;
+}
+
+/* homepage not display */
+.main-container.show .homepage-container {
+  display: none;
+}
+
+.main-container.show .favorite-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tabs-container {
+  height: 50px;
+  background-color: darkorchid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  border-radius: 30px;
+  margin-top: 5px;
+  min-width: 350px;
+}
+
+.tabs-container > button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.homepage-btn.active {
+  scale: 1.2;
+  color: #fff;
+  background-color: #bf00ff;
+  border-radius: 10px;
+}
+
+.favorite-btn.active {
+  scale: 1.2;
+  color: #fff;
+  background-color: #bf00ff;
+  border-radius: 10px;
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.movie-search {
+  width: 350px;
+  height: 30px;
+  background-color: blue;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+  min-width: 350px;
+}
+
+.movie-search input {
+  background-color: inherit;
+  border: 0;
+  margin-left: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+.movie-search input:focus {
+  outline: 0;
+}
+
+.movie-search > button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 15px;
+}
+
+.movie {
+  width: 200px;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.movie:hover {
+  scale: 1.03;
+}
+
+.movie-title {
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.movie img {
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.movie .movie-year {
+  color: brown;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.movie > .fav-btn {
+  border: none;
+  background-color: #5dbea3;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.movie .fav-btn:hover {
+  opacity: 0.8;
+}
+
+.movie .fav-mark {
+  color: red;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 40px;
+  display: none;
+}
+
+.remove-fav-btn {
+  border: none;
+  background-color: greenyellow;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.remove-fav-btn:hover {
+  opacity: 0.8;
+}
+
+/* JS logic to show/hide fav icon */
+.movie.show-fav > .fav-btn {
+  display: none;
+}
+
+.movie.show-fav > .fav-mark {
+  display: block;
+}
+
+/* Movie open in new Tab style */
+.movie-nt {
+  background-color: #bf00ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
